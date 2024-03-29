@@ -52,15 +52,15 @@ achillesResults <-Achilles::achilles(  connectionDetails = connectionDetails, cd
 
 ```
 
-connectionDetails : Database connection information
-cdmDatabaseSchama : Name of your OMOP schema in your database
-resultsDatabaseSchema : Name of your results schema in your database 
-vocabDatabaseSchema : Name of your vocab schema in your database 
-tempEmulationSchema : Name of your temp schema in your database 
-scratchDatabaseSchema : Name of your scratch schema in your database 
-createTable : True or false, if you want Achilles create table
-cdmVersion : Version of your CDM
-outputFolder : Path folder for store logs and errors from Achilles
+- connectionDetails : Database connection information
+- cdmDatabaseSchama : Name of your OMOP schema in your database
+- resultsDatabaseSchema : Name of your results schema in your database 
+- vocabDatabaseSchema : Name of your vocab schema in your database 
+- tempEmulationSchema : Name of your temp schema in your database 
+- scratchDatabaseSchema : Name of your scratch schema in your database 
+- createTable : True or false, if you want Achilles create table
+- cdmVersion : Version of your CDM
+- outputFolder : Path folder for store logs and errors from Achilles
 
 ⚠️If you have this error : 
 ⚠️Error in `.createErrorReport()`:
