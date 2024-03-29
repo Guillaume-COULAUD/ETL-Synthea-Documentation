@@ -3,14 +3,14 @@
 ETL-Syntea Allows you to load data from Synthea files in your OMOP CDM, but it also allows you to load vocabulary from Athena files in your CDM. 
 
 ## Prerequisites
- - [R]("https://cran.r-project.org/bin/windows/base/")
- - [OMOP CDM]("https://github.com/OHDSI/CommonDataModel")
- - [Athena vocabulary files]("https://athena.ohdsi.org/search-terms/start")
+ - [R](https://cran.r-project.org/bin/windows/base/)
+ - [OMOP CDM](https://github.com/OHDSI/CommonDataModel)
+ - [Athena vocabulary files](https://athena.ohdsi.org/search-terms/start)
 
 
 ## 1.Download Synthea file
 
-You can download already generate files [here]("https://synthea.mitre.org/downloads")
+You can download already generate files [here](https://synthea.mitre.org/downloads)
 
 ## 2. Install and use ETL-Synthea with R
 
@@ -129,6 +129,6 @@ ETLSyntheaBuilder::CreateMapAndRollupTables(connectionDetails = cd, cdmSchema = 
 
 ## Usefull links
 
-[ETL-Synthea]("https://github.com/OHDSI/ETL-Synthea")
+[ETL-Synthea](https://github.com/OHDSI/ETL-Synthea)
 
-[Synthea]("https://synthetichealth.github.io/synthea/")
+[Synthea](https://synthetichealth.github.io/synthea/)
