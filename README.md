@@ -1,6 +1,6 @@
 # ETL-Synthea 
 
-ETL-Syntea Allows you to load data from Synthea files in your OMOP CDM, but it allows you to load vocabulary from Athena files in your CDM. 
+ETL-Syntea Allows you to load data from Synthea files in your OMOP CDM, but it also allows you to load vocabulary from Athena files in your CDM. 
 
 ## Prerequisites
  - [R]("https://cran.r-project.org/bin/windows/base/")
