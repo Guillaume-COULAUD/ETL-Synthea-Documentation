@@ -62,15 +62,15 @@ achillesResults <-Achilles::achilles(  connectionDetails = connectionDetails, cd
 - cdmVersion : Version of your CDM
 - outputFolder : Path folder for store logs and errors from Achilles
 
-⚠️If you have this error : 
-⚠️Error in `.createErrorReport()`:
-⚠️! Error executing SQL:
-⚠️org.postgresql.util.PSQLException: ERREUR: la relation « results.achilles_results » n'existe pas
-⚠️You need to look in file "achillesError_2004.txt" in the path you advice in tempEmulationSchema. This error can be caused by many reasons. 
+⚠️If you have this error : <br />
+⚠️Error in `.createErrorReport()`: <br />
+⚠️! Error executing SQL: <br />
+⚠️org.postgresql.util.PSQLException: ERREUR: la relation « results.achilles_results » n'existe pas <br />
+⚠️You need to look in file "achillesError_2004.txt" in the path you advice in tempEmulationSchema. This error can be caused by many reasons.  <br />
 
-⚠️If you have this error :
-⚠️Error:
-⚠️org.postgresql.util.PSQLException: ERREUR: division par zéro
-⚠️It's because your Person table is empty. Use [ETL-Synthea.](https://github.com/Guillaume-COULAUD/ETL-Synthea-Documentation/blob/main/README.md)
+⚠️If you have this error : <br />
+⚠️Error: <br />
+⚠️org.postgresql.util.PSQLException: ERREUR: division par zéro <br />
+⚠️It's because your Person table is empty. Use [ETL-Synthea.](https://github.com/Guillaume-COULAUD/ETL-Synthea-Documentation/blob/main/README.md) <br />
 
 
