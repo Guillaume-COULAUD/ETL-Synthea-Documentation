@@ -25,7 +25,7 @@ library(ETLSyntheaBuilder)
 #### Define database connection
 
 ```
-cd <- DatabaseConnector::createConnectionDetails(`
+cd <- DatabaseConnector::createConnectionDetails(
   dbms     = "postgresql", 
   server   = "localhost/postgres", 
   user     = "postgres", 
@@ -55,7 +55,7 @@ cdmSchema <- "omop_cdm"
 ```
 CDM version :
 
-cdmVersion <- "5.4"`
+cdmVersion <- "5.4"
 
 ```
 
