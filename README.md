@@ -19,7 +19,9 @@ You can download already generate files [here](https://synthea.mitre.org/downloa
 
 ``` 
 devtools::install_github("OHDSI/ETL-Synthea")
+⚠️ If it can't find the repository, you need to set your proxy in R.
 library(ETLSyntheaBuilder)
+⚠️ When it has ask to you to make a choice, choose 1.
 ```
 
 #### Define database connection
@@ -64,7 +66,7 @@ Synthea version :
 
 syntheaVersion <- "3.2.0"
 
-⚠️ If you have some insert issues, use a more recent synthea version!!
+⚠️ If you have some insert issues, use a synthea version compatible with your Synthea files!!
 ```
 
 ```
@@ -72,7 +74,7 @@ Schema to load the Synthea tables :
 
 syntheaSchema <- "native"
 
-⚠️ You need to create this schema in your database
+⚠️ You need to create this schema in your database. You can name it like you want.
 ```
 
 ```
