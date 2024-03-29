@@ -72,7 +72,7 @@ Schema to load the Synthea tables :
 
 syntheaSchema <- "native"
 
-⚠️ Don't need to be modify
+⚠️ You need to create this schema in your database
 ```
 
 ```
