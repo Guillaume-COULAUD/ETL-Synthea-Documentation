@@ -29,8 +29,9 @@ Run the following command, in the folder where your docker-compose.yml file is p
 ```
 docker compose pull && docker-compose --profile default up -d
 
-If you want to see more option you can visit [Broadsea repository](https://github.com/OHDSI/Broadsea/tree/main)
 ```
+
+If you want to see more option you can visit [Broadsea repository](https://github.com/OHDSI/Broadsea/tree/main)
 
 When your WebAPI is running, go on http//{your host}/WebAPI/ddl/results?dialect={your dmbs}&schema={your result schema name}&vocabSchema={your vocab schema name}&tempSchema={your temp schema name}&initConcepthierarchy=true
 
