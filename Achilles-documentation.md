@@ -49,7 +49,7 @@ cd <- DatabaseConnector::createConnectionDetails(
 
 ```
 
-achillesResults <-Achilles::achilles(  connectionDetails = connectionDetails, cdmDatabaseSchema = "omop_cdm",  resultsDatabaseSchema = "results",  vocabDatabaseSchema = "omop_cdm",  tempEmulationSchema = "temp", scratchDatabaseSchema  = "omop_cdm", createTable = TRUE, cdmVersion = "5.4", outputFolder = "c:\\temp\\")
+achillesResults <-Achilles::achilles(  connectionDetails = cd, cdmDatabaseSchema = "omop_cdm",  resultsDatabaseSchema = "results",  vocabDatabaseSchema = "omop_cdm",  tempEmulationSchema = "temp", scratchDatabaseSchema  = "omop_cdm", createTable = TRUE, cdmVersion = "5.4", outputFolder = "c:\\temp\\")
 
 ```
 
