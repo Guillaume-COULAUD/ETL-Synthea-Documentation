@@ -40,35 +40,35 @@ http://127.0.0.1/WebAPI/ddl/results?dialect=postgresql&schema=results&vocabSchem
 
 Copy and pasted the queries on the web page in your dmbs and execute them.
 
-After that execute the following queries to insert Data sources: 
+After that, execute the following queries to insert Data sources. don't forget to change the values inside {}: 
 
 ```
 
 INSERT INTO webapi.source (source_id, source_name, source_key, source_connection, source_dialect) 
-SELECT nextval('webapi.source_sequence'), 'My Cdm', 'MY_CDM', ' jdbc:postgresql://{your host}:5432/cdm?user={user}&password={password}', '{your dmbs}';
+SELECT nextval('webapi.source_sequence'), '{My CDM}', '{MY_CDM}', ' jdbc:postgresql://{your host}:5432/cdm?user={user}&password={password}', '{your dmbs}';
 
 INSERT INTO webapi.source_daimon (source_daimon_id, source_id, daimon_type, table_qualifier, priority) 
 SELECT nextval('webapi.source_daimon_sequence'), source_id, 0, '{your omop cdm}', 0
 FROM webapi.source
-WHERE source_key = 'MY_CDM'
+WHERE source_key = '{MY_CDM}'
 ;
 
 INSERT INTO webapi.source_daimon (source_daimon_id, source_id, daimon_type, table_qualifier, priority) 
 SELECT nextval('webapi.source_daimon_sequence'), source_id, 1, '{your omop cdm (or vocab cdm if your vocab is not in your omop cdm)}', 1
 FROM webapi.source
-WHERE source_key = 'MY_CDM'
+WHERE source_key = '{MY_CDM}'
 ;
 
 INSERT INTO webapi.source_daimon (source_daimon_id, source_id, daimon_type, table_qualifier, priority) 
 SELECT nextval('webapi.source_daimon_sequence'), source_id, 2, '{your result cdm}', 1
 FROM webapi.source
-WHERE source_key = 'MY_CDM'
+WHERE source_key = '{MY_CDM}'
 ;
 
 INSERT INTO webapi.source_daimon (source_daimon_id, source_id, daimon_type, table_qualifier, priority) 
 SELECT nextval('webapi.source_daimon_sequence'), source_id, 5, '{your temp cdm}', 0
 FROM webapi.source
-WHERE source_key = 'MY_CDM'
+WHERE source_key = '{MY_CDM}'
 ;
 
 ```
